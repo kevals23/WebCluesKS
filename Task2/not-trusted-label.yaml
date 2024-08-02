@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: not-trusted-label
+  namespace: nodsapp
+  labels:
+    app: not-trusted
+spec:
+  containers:
+  - name: trusted-label
+    image: alpine
+    command:
+    - sleep
+    - "3600"

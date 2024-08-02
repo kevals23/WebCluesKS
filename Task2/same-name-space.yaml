@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: same-namespace
+  namespace: nodsapp
+spec:
+  containers:
+  - name: smae-namespace-container
+    image: nginx:latest
